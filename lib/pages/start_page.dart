@@ -272,6 +272,36 @@ class StartPage extends StatelessWidget {
                 // Airline & Boat
 
                 // Buttons (prev & next)
+                Spacer(),
+                Row(
+                  children: [
+                    Expanded(
+                      child: CupertinoButton(
+                        color: Color(0xffEAEAEA),
+                        borderRadius: BorderRadius.circular(30),
+                        onPressed: () {},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              CupertinoIcons.chevron_left,
+                              color: Colors.black,
+                            ),
+                            SizedBox(width: 5),
+                            Text(
+                              "Prev Step",
+                              style: GoogleFonts.roboto(
+                                color: Colors.black,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
