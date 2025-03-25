@@ -163,6 +163,111 @@ class StartPage extends StatelessWidget {
                 ),
 
                 // Delivery Man & Truck
+                SizedBox(height: 15),
+                SizedBox(
+                  height: 160,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Color(0xffF2F2F2),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Delivery man",
+                                style: GoogleFonts.roboto(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              SizedBox(height: 10),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  SizedBox(
+                                    height: 55,
+                                    width: 55,
+                                    child: Image.asset("assets/delivery.png"),
+                                  ),
+                                  SizedBox(width: 10),
+                                  SizedBox(
+                                    height: 50,
+                                    width: 50,
+                                    child: CupertinoButton(
+                                      color: Color(0xffFE6F23),
+                                      borderRadius: BorderRadius.circular(30),
+                                      padding: EdgeInsets.zero,
+                                      onPressed: () {},
+                                      child: Icon(
+                                        CupertinoIcons.chevron_right,
+                                        color: Colors.white,
+                                        size: 28,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 15),
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                            color: Color(0xffF2F2F2),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Truck",
+                                style: GoogleFonts.roboto(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              SizedBox(height: 10),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  SizedBox(
+                                    height: 55,
+                                    width: 55,
+                                    child: Image.asset("assets/truck.png"),
+                                  ),
+                                  SizedBox(width: 10),
+                                  SizedBox(
+                                    height: 50,
+                                    width: 50,
+                                    child: CupertinoButton(
+                                      color: Color(0xffFE6F23),
+                                      borderRadius: BorderRadius.circular(30),
+                                      padding: EdgeInsets.zero,
+                                      onPressed: () {},
+                                      child: Icon(
+                                        CupertinoIcons.chevron_right,
+                                        color: Colors.white,
+                                        size: 28,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
 
                 // Airline & Boat
 
